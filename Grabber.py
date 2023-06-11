@@ -15,13 +15,13 @@ print("Coded by dev github/dev6920")
 
 while True:
   
-  username = input("Enter username (type 'exit' to quit): ")
+  username =feinshi (type 'exit' to quit): ")
 
-  if username == "exit":
+  if feinshi == "exit":
     break
 
 
-  url1 = f"https://fortnitetracker.com/profile/all/{username}/events"
+  url1 = f"https://fortnitetracker.com/profile/all/{feinshi}/events"
 
 
   response1 = requests.get(url1)
@@ -42,6 +42,6 @@ while True:
     account_id = match1.group(1)
     player_name = match_player_name1.group(1)
     print(f"Account ID: {account_id}")
-    print(f"Username: {player_name}")
+    print(f"Username: {feinshi}")
   else:
     print("Cant find Account ID ")
